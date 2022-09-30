@@ -1,0 +1,8 @@
+$background: beige;
+$text: red;
+
+body {
+   background-color: $background;
+   color: $text;
+   user-select: none;
+}
