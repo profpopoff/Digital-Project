@@ -46,8 +46,10 @@
 .uppercase { text-transform: uppercase }
 
 .fs-200 { font-size: var(--fs-200) }
-.fs-64 { font-size: var(--fs-64) }
+.fs-64 { font-size: var(--fs-64); line-height: 64px; }
+.fs-40 { font-size: var(--fs-40) }
 .fs-22 { font-size: var(--fs-22) }
+.fs-18 { font-size: var(--fs-18) }
 .fs-16 { font-size: var(--fs-16) }
 .fs-14 { font-size: var(--fs-14) }
 .fs-12 { font-size: var(--fs-12) }
