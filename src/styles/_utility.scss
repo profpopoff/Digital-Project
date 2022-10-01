@@ -9,7 +9,7 @@
 }
 
 .container {
-   max-width: 80rem;
+   max-width: 120rem;
    margin-inline: auto;
    padding-inline: 2em;
 }
@@ -26,11 +26,28 @@
    border: 0;
 }
 
-// * colors
+/* colors */
 
 .bg-light { background-color: hsl( var(--clg-light) / var(--opacity, 1)) }
 .bg-dark { background-color: hsl( var(--clg-dark) / var(--opacity, 1)) }
+.bg-grey { background-color: hsl( var(--clg-grey) / var(--opacity, 1)) }
 
 .text-light { color: hsl( var(--clg-light) / var(--opacity, 1)) }
 .text-dark { color: hsl( var(--clg-dark) / var(--opacity, 1)) }
 .text-grey { color: hsl( var(--clg-grey) / var(--opacity, 1)) }
+
+/* typography */
+
+.ff-bold { font-family: var(--ff-bold) }
+.ff-medium { font-family: var(--ff-medium) }
+.ff-regular { font-family: var(--ff-regular) }
+.ff-light { font-family: var(--ff-light) }
+
+.uppercase { text-transform: uppercase }
+
+.fs-200 { font-size: var(--fs-200) }
+.fs-64 { font-size: var(--fs-64) }
+.fs-22 { font-size: var(--fs-22) }
+.fs-16 { font-size: var(--fs-16) }
+.fs-14 { font-size: var(--fs-14) }
+.fs-12 { font-size: var(--fs-12) }

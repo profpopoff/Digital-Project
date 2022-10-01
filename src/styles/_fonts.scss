@@ -8,11 +8,11 @@
 }
 
 @font-face {
-   font-family: 'TTHoves-Light';
-   src: url('../assets/fonts/TTHoves-Light.woff2') format('woff2'),
-      url('../assets/fonts/TTHoves-Light.woff') format('woff');
+   font-family: 'TTHoves-Medium';
+   src: url('../assets/fonts/TTHoves-Medium.woff2') format('woff2'),
+      url('../assets/fonts/TTHoves-Medium.woff') format('woff');
    font-display: swap;
-   font-weight: 300;
+   font-weight: 500;
    font-style: normal;
 }
 
@@ -26,10 +26,10 @@
 }
 
 @font-face {
-   font-family: 'TTHoves-Medium';
-   src: url('../assets/fonts/TTHoves-Medium.woff2') format('woff2'),
-      url('../assets/fonts/TTHoves-Medium.woff') format('woff');
+   font-family: 'TTHoves-Light';
+   src: url('../assets/fonts/TTHoves-Light.woff2') format('woff2'),
+      url('../assets/fonts/TTHoves-Light.woff') format('woff');
    font-display: swap;
-   font-weight: 500;
+   font-weight: 300;
    font-style: normal;
 }
