@@ -29,6 +29,10 @@ module.exports = {
       new HTMLWebpackPlugin({
          template: './index.html'
       }),
+      new HTMLWebpackPlugin({
+         filename: 'design-system.html',
+         template: './design-system.html'
+      }),
       new MiniCssExtractPlugin({
          filename: '[name].[contenthash].css'
       }),
