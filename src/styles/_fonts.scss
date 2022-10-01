@@ -33,3 +33,12 @@
    font-weight: 300;
    font-style: normal;
 }
+
+@font-face {
+   font-family: 'SFProDisplay-Black';
+   src: url('../assets/fonts/SFProDisplay-Black.woff2') format('woff2'),
+      url('../assets/fonts/SFProDisplay-Black.woff') format('woff');
+   font-display: swap;
+   font-weight: 900;
+   font-style: normal;
+}

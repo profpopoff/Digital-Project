@@ -3,7 +3,7 @@
 :root {
    /* colors */
    --clg-light: 0 0% 90%;
-   --clg-light-hover: 0 0% 98%;
+   --clg-white: 0 0% 95%;
    --clg-grey: 0 0% 74%;
    --clg-dark: 0 0% 20%;
 
@@ -18,6 +18,7 @@
    --fs-12: .75rem;
 
    /* font-families */
+   --ff-black: 'SFProDisplay-Black', sans-serif;
    --ff-bold: 'TTHoves-Bold', sans-serif;
    --ff-medium: 'TTHoves-Medium', sans-serif;
    --ff-regular: 'TTHoves-Regular', sans-serif;
