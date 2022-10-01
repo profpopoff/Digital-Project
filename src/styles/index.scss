@@ -1,12 +1,11 @@
 @import url('./_reset.scss');
 @import url('./_fonts.scss');
-
-$background: beige;
-$text: tomato;
+@import url('./_var.scss');
+@import url('./_utility.scss');
 
 body {
-   background-color: $background;
-   color: $text;
-   font-family: 'TTHoves-Regular';
-   user-select: none;
+   font-family: var(--ff-regular);
+   font-size: var(--fs-16);
+   color: hsl(var(--clg-dark));
+   background-color: hsl(var(--clg-light));
 }

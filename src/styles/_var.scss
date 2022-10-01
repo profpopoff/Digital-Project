@@ -1,6 +1,23 @@
+@import url('./_fonts.scss');
+
 :root {
+   /* colors */
    --clg-light: 0 0% 90%;
    --clg-light-hover: 0 0% 98%;
    --clg-grey: 0 0% 74%;
    --clg-dark: 0 0% 20%;
+
+   /* font-sizes */
+   --fs-200: 12.5rem;
+   --fs-64: 4rem;
+   --fs-22: 1.375rem;
+   --fs-16: 1rem;
+   --fs-14: .875rem;
+   --fs-12: .75rem;
+
+   /* font-families */
+   --ff-bold: 'TTHoves-Bold', sans-serif;
+   --ff-medium: 'TTHoves-Medium', sans-serif;
+   --ff-regular: 'TTHoves-Regular', sans-serif;
+   --ff-light: 'TTHoves-Light', sans-serif;
 }
