@@ -22,6 +22,15 @@
    margin: -1px;
    overflow: hidden;
    clip: rect(0, 0, 0, 0);
-   white-space: nowrap; /* added line */
+   white-space: nowrap;
    border: 0;
- }
+}
+
+// * colors
+
+.bg-light { background-color: hsl( var(--clg-light) / var(--opacity, 1)) }
+.bg-dark { background-color: hsl( var(--clg-dark) / var(--opacity, 1)) }
+
+.text-light { color: hsl( var(--clg-light) / var(--opacity, 1)) }
+.text-dark { color: hsl( var(--clg-dark) / var(--opacity, 1)) }
+.text-grey { color: hsl( var(--clg-grey) / var(--opacity, 1)) }
