@@ -1,8 +1,11 @@
+@import url('./_fonts.scss');
+
 $background: beige;
-$text: red;
+$text: tomato;
 
 body {
    background-color: $background;
    color: $text;
+   font-family: 'TTHoves-Regular';
    user-select: none;
 }
