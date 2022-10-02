@@ -1,7 +1,4 @@
-@import url('./_reset.scss');
-@import url('./_fonts.scss');
-@import url('./_var.scss');
-@import url('./_utility.scss');
+@import './_reset', './_fonts', './_var', './_utility';
 
 body {
    font-family: var(--ff-regular);
