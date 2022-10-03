@@ -8,6 +8,11 @@
    gap: var(--gap, 1rem);
 }
 
+.flow > *:where(:not(:last-child)) {
+   margin-bottom: var(--flow-space, 1rem);
+   outline: 1px solid red;
+}
+
 .container {
    max-width: 120rem;
    margin-inline: auto;
@@ -49,7 +54,7 @@
 .uppercase { text-transform: uppercase }
 
 .fs-200 { font-size: var(--fs-200) }
-.fs-64 { font-size: var(--fs-64); line-height: 4rem; }
+.fs-64 { font-size: var(--fs-64) }
 .fs-40 { font-size: var(--fs-40) }
 .fs-22 { font-size: var(--fs-22) }
 .fs-18 { font-size: var(--fs-18) }
