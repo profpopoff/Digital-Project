@@ -10,7 +10,6 @@
 
 .flow > *:where(:not(:last-child)) {
    margin-bottom: var(--flow-space, 1rem);
-   outline: 1px solid red;
 }
 
 .container {
@@ -61,17 +60,3 @@
 .fs-16 { font-size: var(--fs-16) }
 .fs-14 { font-size: var(--fs-14) }
 .fs-12 { font-size: var(--fs-12) }
-
-.page-title {
-   display: inline-block;
-   font-family: var(--ff-bold);
-   font-size: var(--fs-64); 
-   line-height: 4rem;
-   text-transform: uppercase;
-
-   span {
-      font-family: var(--ff-light);
-      display: block;
-      color: hsl( var(--clg-grey) / var(--opacity, 1));
-   }
-}
