@@ -10,8 +10,8 @@
    </head>
 
    <body>
-      <div class="container">
-         <section id="colors">
+      <div class="container flow" style="--flow-space: 3rem; padding-bottom: 2rem;">
+         <section id="colors" class="flow" style="--flow-space: 1rem">
             <h1 class="page-title"><span>01</span>colors</h1>
             <div class="flex">
                <div class="bg-light text-dark" style="flex: 1; padding: 3rem 6rem 1rem 1rem; border: 1px solid #000;">
@@ -25,9 +25,9 @@
                </div>
             </div>
          </section>
-         <section id="typography">
+         <section id="typography" class="flow" style="--flow-space: 1rem">
             <h1 class="page-title"><span>02</span>typography</h1>
-            <div class="flex">
+            <div class="flex" style="--flow-space: 1rem">
                <div class="flow" style="flex: 1;">
                   <div>
                      <h3 style="color: tomato">Heading 1</h3>
@@ -75,6 +75,16 @@
                      <p class="fs-14 ff-regular">Отправляя заявку Вы соглашаетесь с политикой конфиденциальности</p>
                   </div>
                </div>
+            </div>
+         </section>
+         <section id="interactive-elements" class="flow" style="--flow-space: 1rem">
+            <h1 class="page-title"><span>03</span>interactive-elements</h1>
+            <div id="navigation">
+               navigation
+            </div>
+            <div class="flex">
+               <button class="main-button bg-white ff-regular fs-12 uppercase">Взглянуть<span></span></button>
+               <a class="main-button bg-dark text-white ff-regular fs-12 uppercase" style="--arrow-color: #fff">Взглянуть<span></span></a>
             </div>
          </section>
       </div>
