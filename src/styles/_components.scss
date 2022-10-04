@@ -1,15 +1,14 @@
-
 .page-title {
    display: inline-block;
    font-family: var(--ff-bold);
-   font-size: var(--fs-64); 
+   font-size: var(--fs-64);
    line-height: 4rem;
    text-transform: uppercase;
 
    span {
       font-family: var(--ff-light);
       display: block;
-      color: hsl( var(--clg-grey) / var(--opacity, 1));
+      color: hsl(var(--clr-grey) / var(--opacity, 1));
    }
 }
 
@@ -31,17 +30,18 @@
       width: 1rem;
       height: 1px;
       border-radius: 1rem;
-      background-color: var(--arrow-color, hsl(var(--clg-dark)));
-      transition: .15s all ease-in-out;
+      background-color: var(--arrow-color, hsl(var(--clr-dark)));
+      transition: .1s all ease-in-out;
 
-      &::after, &::before {
+      &::after,
+      &::before {
          content: "";
          position: absolute;
          right: -2px;
          width: .5rem;
          height: 1px;
          border-radius: 1rem;
-         background-color: var(--arrow-color, hsl(var(--clg-dark)));
+         background-color: var(--arrow-color, hsl(var(--clr-dark)));
       }
 
       &::after {
@@ -50,18 +50,150 @@
       }
 
       &::before {
-         bottom:2.6px;
+         bottom: 2.6px;
          transform: rotate(45deg);
       }
    }
 
+   &:hover span {
+      transform: translateX(.5rem);
+   }
+
+   &:active span {
+      transform: translateX(1rem);
+   }
+}
+
+.slider-button {
+   position: relative;
+   width: 3.3rem;
+   height: 3.3rem;
+   border: 1px solid hsl(var(--clr-grey) / var(--opacity, 1));
+   cursor: pointer;
+   transition: .15s all ease-in-out;
+
    &:hover {
-      span {
-         transform: translateX(.5rem);
+      background-color: hsl(var(--clr-grey) / var(--opacity, .2));
+   }
+
+   span {
+      position: relative;
+      display: inline-block;
+      width: 1rem;
+      height: .0625rem;
+      border-radius: 1rem;
+      background-color: var(--arrow-color, hsl(var(--clr-dark)));
+      transition: .2s all ease-in-out;
+
+      &::after,
+      &::before {
+         content: "";
+         position: absolute;
+         width: .5rem;
+         height: .0625rem;
+         border-radius: 1rem;
+         background-color: var(--arrow-color, hsl(var(--clr-dark)));
+      }
+
+      &::after {
+         top: .16rem;
+      }
+
+      &::before {
+         bottom: .16rem;
       }
    }
 
-   &:active {
-      box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+   &.left {
+      span {
+         &::after {
+            left: -.125rem;
+            transform: rotate(45deg);
+         }
+
+         &::before {
+            left: -.125rem;
+            transform: rotate(-45deg);
+         }
+      }
+   }
+
+   &.right {
+      span {
+         &::after {
+            right: -.125rem;
+            transform: rotate(-45deg);
+         }
+
+         &::before {
+            right: -.125rem;
+            transform: rotate(45deg);
+         }
+      }
+   }
+}
+
+.input {
+   position: relative;
+   display: block;
+
+   &--label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1.25rem;
+      display: inline-block;
+      z-index: 1;
+
+      span {
+         color: #C30000;
+      }
+   }
+
+   input {
+      position: relative;
+      width: 24rem;
+      height: 2.8rem;
+      padding-inline: 1.25rem;
+      border: none;
+      outline: none;
+      z-index: 0;
+
+      &:not(:placeholder-shown) {
+         z-index: 2;
+      }
+   }
+}
+
+.textarea {
+   position: relative;
+   display: block;
+   margin-top: var(--flow-space, 1rem);
+
+   &--label {
+      position: absolute;
+      top: .8rem;
+      left: 1.25rem;
+      display: inline-block;
+      z-index: 1;
+
+      span {
+         color: #C30000;
+      }
+   }
+
+   textarea {
+      position: relative;
+      width: 24rem;
+      height: 9rem;
+      padding: .8rem 1.25rem;
+      border: none;
+      outline: none;
+      z-index: 0;
+      resize: none;
+
+      &:not(:placeholder-shown) {
+         z-index: 2;
+      }
    }
 }
