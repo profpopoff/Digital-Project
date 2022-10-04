@@ -32,15 +32,15 @@
 
 /* colors */
 
-.bg-white { background-color: hsl( var(--clg-white) / var(--opacity, 1)) }
-.bg-light { background-color: hsl( var(--clg-light) / var(--opacity, 1)) }
-.bg-dark { background-color: hsl( var(--clg-dark) / var(--opacity, 1)) }
-.bg-grey { background-color: hsl( var(--clg-grey) / var(--opacity, 1)) }
+.bg-white { background-color: hsl( var(--clr-white) / var(--opacity, 1)) }
+.bg-light { background-color: hsl( var(--clr-light) / var(--opacity, 1)) }
+.bg-dark { background-color: hsl( var(--clr-dark) / var(--opacity, 1)) }
+.bg-grey { background-color: hsl( var(--clr-grey) / var(--opacity, 1)) }
 
-.text-white { color: hsl( var(--clg-white) / var(--opacity, 1)) }
-.text-light { color: hsl( var(--clg-light) / var(--opacity, 1)) }
-.text-dark { color: hsl( var(--clg-dark) / var(--opacity, 1)) }
-.text-grey { color: hsl( var(--clg-grey) / var(--opacity, 1)) }
+.text-white { color: hsl( var(--clr-white) / var(--opacity, 1)) }
+.text-light { color: hsl( var(--clr-light) / var(--opacity, 1)) }
+.text-dark { color: hsl( var(--clr-dark) / var(--opacity, 1)) }
+.text-grey { color: hsl( var(--clr-grey) / var(--opacity, 1)) }
 
 /* typography */
 
