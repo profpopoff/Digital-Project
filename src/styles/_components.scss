@@ -205,8 +205,20 @@
    }
 }
 
+.counter {
+   align-items: center;
+
+   span {
+      width: 2.5rem;
+      height: 2px;
+      border-radius: 1rem;
+      background-color: hsl(var(--clr-grey) / var(--opacity, 1));
+      transform: rotate(-45deg);
+   }
+}
+
 .primary-header {
-   height: 6rem;
+   height: var(--header-height);
    align-items: center;
    justify-content: space-between;
 
@@ -245,6 +257,49 @@
 
       &.active {
          --border-opacity: 1;
+      }
+   }
+}
+
+.hero {
+   justify-content: space-between;
+   height: calc(100vh - var(--header-height));
+
+   &-headline {
+      --flow-space: clamp(1rem, 6vh, 6rem);
+      padding-top: calc(50vh - var(--header-height));
+
+      .slider-buttons {
+         position: relative;
+         width: min-content;
+
+         &::after {
+            content: "";
+            position: absolute;
+            right: -25rem;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1;
+            width: 25rem;
+            height: 1px;
+            background-color: hsl(var(--clr-grey) / var(--opacity, 1));
+         }
+      }
+   }
+
+   &-image {
+      position: relative;
+      width: 70%;
+
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+
+      .main-button {
+         position: absolute;
+         bottom: 0;
       }
    }
 }

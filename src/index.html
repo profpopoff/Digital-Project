@@ -16,7 +16,8 @@
                <img src="./assets/images/logo.svg" alt="digital project logo">
             </a>
          </div>
-         <button class="burger-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">menu</span></button>
+         <button class="burger-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+               class="sr-only">menu</span></button>
          <div id="navigation">
             <nav>
                <ul id="primary-navigation" class="primary-navigation flex">
@@ -35,8 +36,25 @@
             </nav>
          </div>
       </header>
-      <main class="container flow" style="--flow-space: 7.5rem">
-         <section class="hero">hero</section>
+      <main class="flow" style="--flow-space: 7.5rem">
+         <section class="hero flex" style="gap: 4rem">
+            <div class="hero-headline flow">
+               <h1 class="page-title"><span>проект</span>nurtown</h1>
+               <div class="slider-buttons flex">
+                  <button class="slider-button left bg-white">
+                     <span></span>
+                  </button>
+                  <button class="slider-button right bg-white">
+                     <span></span>
+                  </button>
+               </div>
+               <span class="counter flex text-grey ff-regular fs-22">01<span></span>02</span>
+            </div>
+            <div class="hero-image">
+               <img src="https://source.unsplash.com/1600x1400/?black-and-white-modern-building" alt="modern-interior">
+               <a class="main-button bg-white text-dark ff-regular fs-12 uppercase letter-spacing" href="#">взгялнуть<span></span></a>
+            </div>
+         </section>
          <section class="about">about</section>
          <section class="challenges">challenges</section>
          <section class="projects">projects</section>
