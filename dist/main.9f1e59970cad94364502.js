@@ -344,8 +344,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/html-loader/dist/runtime/getUrl.js */ "../node_modules/html-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./assets/images/logo.svg */ "./assets/images/logo.svg"), __webpack_require__.b);
 // Module
-var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n   <meta charset=\"UTF-8\">\r\n   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n   <title>Digital Project</title>\r\n</head>\r\n\r\n<body>\r\n   <div class=\"container\">\r\n      <header class=\"flex\">\r\n         <div>logo</div>\r\n         <div id=\"navigation\">\r\n            <nav>\r\n               <ul class=\"primary-navigation flex\">\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"index.html\">главная</a>\r\n                  </li>\r\n                  <li class=\"active\"><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\"\r\n                        href=\"gallery.html\">галерея</a></li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"projects.html\">проекты</a>\r\n                  </li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\"\r\n                        href=\"sertificates.html\">сертификаты</a></li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"contacts.html\">контакты</a>\r\n                  </li>\r\n               </ul>\r\n            </nav>\r\n         </div>\r\n      </header>\r\n      <main></main>\r\n      <footer></footer>\r\n   </div>\r\n</body>\r\n\r\n</html>";
+var ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);
+var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n   <meta charset=\"UTF-8\">\r\n   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n   <title>Digital Project</title>\r\n</head>\r\n\r\n<body>\r\n   <div class=\"container\">\r\n      <header class=\"flex\">\r\n         <div>\r\n            <a href=\"index.html\">\r\n               <img src=\"" + ___HTML_LOADER_REPLACEMENT_0___ + "\" alt=\"digital project logo\">\r\n            </a>\r\n         </div>\r\n         <div id=\"navigation\">\r\n            <nav>\r\n               <ul class=\"primary-navigation flex\">\r\n                  <li class=\"active\"><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"index.html\">главная</a>\r\n                  </li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\"\r\n                        href=\"gallery.html\">галерея</a></li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"projects.html\">проекты</a>\r\n                  </li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\"\r\n                        href=\"sertificates.html\">сертификаты</a></li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"contacts.html\">контакты</a>\r\n                  </li>\r\n               </ul>\r\n            </nav>\r\n         </div>\r\n      </header>\r\n      <main></main>\r\n      <footer></footer>\r\n   </div>\r\n</body>\r\n\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
 
@@ -382,6 +388,41 @@ __webpack_require__.r(__webpack_exports__);
 var code = "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n\r\n<head>\r\n   <meta charset=\"UTF-8\">\r\n   <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\r\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n   <title>Projects</title>\r\n</head>\r\n\r\n<body>\r\n   <div class=\"container\">\r\n      <header class=\"flex\">\r\n         <div>logo</div>\r\n         <div id=\"navigation\">\r\n            <nav>\r\n               <ul class=\"primary-navigation flex\">\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"index.html\">главная</a>\r\n                  </li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"gallery.html\">галерея</a>\r\n                  </li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"projects.html\">проекты</a>\r\n                  </li>\r\n                  <li class=\"active\"><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\"\r\n                        href=\"sertificates.html\">сертификаты</a></li>\r\n                  <li><a class=\"text-dark fs-12 ff-regular uppercase letter-spacing\" href=\"contacts.html\">контакты</a>\r\n                  </li>\r\n               </ul>\r\n            </nav>\r\n         </div>\r\n      </header>\r\n      <main></main>\r\n      <footer></footer>\r\n   </div>\r\n</body>\r\n\r\n</html>";
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);
+
+/***/ }),
+
+/***/ "../node_modules/html-loader/dist/runtime/getUrl.js":
+/*!**********************************************************!*\
+  !*** ../node_modules/html-loader/dist/runtime/getUrl.js ***!
+  \**********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = String(url.__esModule ? url.default : url);
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  }
+
+  if (options.maybeNeedQuotes && /[\t\n\f\r "'=<>`]/.test(url)) {
+    return "\"".concat(url, "\"");
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -745,6 +786,16 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./assets/images/logo.svg":
+/*!********************************!*\
+  !*** ./assets/images/logo.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "assets/e01d9bf6a92b34790a1f.svg";
+
+/***/ }),
+
 /***/ "./assets/fonts/SFProDisplay-Black.woff":
 /*!**********************************************!*\
   !*** ./assets/fonts/SFProDisplay-Black.woff ***!
@@ -1004,4 +1055,4 @@ __webpack_require__.r(__webpack_exports__);
 
 /******/ })()
 ;
-//# sourceMappingURL=main.a7e1686d05c21919cdce.js.map
+//# sourceMappingURL=main.9f1e59970cad94364502.js.map
