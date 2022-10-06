@@ -205,6 +205,20 @@
    }
 }
 
+.primary-header {
+   height: 6rem;
+   align-items: center;
+   justify-content: space-between;
+
+   .logo {
+      padding-top: 1rem;
+   }
+
+   .burger-toggle {
+      display: none;
+   }
+}
+
 .primary-navigation {
    --gap: 4rem;
    height: 2rem;

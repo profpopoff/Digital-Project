@@ -10,19 +10,21 @@
 
 <body>
    <div class="container">
-      <header class="flex">
-         <div>
+      <header class="primary-header flex">
+         <div class="logo">
             <a href="index.html">
                <img src="./assets/images/logo.svg" alt="digital project logo">
             </a>
          </div>
+         <button class="burger-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">menu</span></button>
          <div id="navigation">
             <nav>
-               <ul class="primary-navigation flex">
-                  <li class="active"><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="index.html">главная</a>
+               <ul id="primary-navigation" class="primary-navigation flex">
+                  <li class="active"><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
+                        href="index.html">главная</a>
                   </li>
-                  <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
-                        href="gallery.html">галерея</a></li>
+                  <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="gallery.html">галерея</a>
+                  </li>
                   <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="projects.html">проекты</a>
                   </li>
                   <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
@@ -33,7 +35,13 @@
             </nav>
          </div>
       </header>
-      <main></main>
+      <main class="container flow" style="--flow-space: 7.5rem">
+         <section class="hero">hero</section>
+         <section class="about">about</section>
+         <section class="challenges">challenges</section>
+         <section class="projects">projects</section>
+         <section class="contact">contact</section>
+      </main>
       <footer></footer>
    </div>
 </body>
