@@ -1,3 +1,7 @@
 import './index.html'
 import './design-system.html'
+import './contacts.html'
+import './gallery.html'
+import './projects.html'
+import './sertificates.html'
 import './styles/index.scss'

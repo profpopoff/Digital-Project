@@ -226,7 +226,7 @@
 
       &:hover,
       &:focus {
-         --border-opacity: .5;
+         --border-opacity: .3;
       }
 
       &.active {
@@ -275,7 +275,7 @@
          opacity: 0;
          position: absolute;
          inset: 0;
-         padding: 1rem;
+         padding: 2rem;
          z-index: 4;
          display: flex;
          flex-direction: column;

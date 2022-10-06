@@ -33,6 +33,22 @@ module.exports = {
          filename: 'design-system.html',
          template: './design-system.html'
       }),
+      new HTMLWebpackPlugin({
+         filename: 'contacts.html',
+         template: './contacts.html'
+      }),
+      new HTMLWebpackPlugin({
+         filename: 'gallery.html',
+         template: './gallery.html'
+      }),
+      new HTMLWebpackPlugin({
+         filename: 'projects.html',
+         template: './projects.html'
+      }),
+      new HTMLWebpackPlugin({
+         filename: 'sertificates.html',
+         template: './sertificates.html'
+      }),
       new MiniCssExtractPlugin({
          filename: '[name].[contenthash].css'
       }),
