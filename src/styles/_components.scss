@@ -467,3 +467,25 @@
       }
    }
 }
+
+.tasks {
+   max-width: 60rem;
+   margin-inline: auto;
+
+   ol {
+      --gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0;
+      list-style: none;
+
+      li {
+         flex: 1;
+         align-items: center;
+
+         p {
+            width: 15rem;
+         }
+      }
+   }
+}
