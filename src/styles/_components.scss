@@ -491,6 +491,30 @@
    }
 }
 
-.projects .projects-link {
-   margin-left: auto;
+.projects {
+   &>*:where(:not(:last-child)) {
+      margin-bottom: 2rem;
+   }
+
+   .projects-link {
+      margin-left: auto;
+   }
+}
+
+.contact {
+   &>*:where(:not(:last-child)) {
+      margin-bottom: 2rem;
+   }
+
+   &-image {
+      height: 23rem;
+      width: 100%;
+
+      img {
+         height: 100%;
+         width: 100%;
+         object-fit: cover;
+         object-position: 50% 50%;
+      }
+   }
 }
