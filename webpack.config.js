@@ -46,8 +46,8 @@ module.exports = {
          template: './projects.html'
       }),
       new HTMLWebpackPlugin({
-         filename: 'sertificates.html',
-         template: './sertificates.html'
+         filename: 'certificates.html',
+         template: './certificates.html'
       }),
       new MiniCssExtractPlugin({
          filename: '[name].[contenthash].css'

@@ -6,44 +6,218 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Digital Project</title>
-<script defer src="main.7e495ee12e885c98ea17.js"></script></head>
+   <link rel="icon" href="assets/a0e814482df95187fa5a.svg">
+<script defer src="main.851b3b2295e762fcb4fd.js"></script></head>
 
 <body>
-   <div class="container">
-      <header class="primary-header flex">
-         <div class="logo">
-            <a href="index.html">
-               <img src="assets/e01d9bf6a92b34790a1f.svg" alt="digital project logo">
+   <header class="primary-header container flex">
+      <div class="logo">
+         <a href="/">
+            <img src="assets/e01d9bf6a92b34790a1f.svg" alt="digital project logo">
+         </a>
+      </div>
+      <button class="burger-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+            class="sr-only">menu</span></button>
+      <div id="navigation">
+         <nav>
+            <ul id="primary-navigation" class="primary-navigation flex">
+               <li class="active"><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="/">главная</a>
+               </li>
+               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="gallery.html">галерея</a>
+               </li>
+               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="projects.html">проекты</a>
+               </li>
+               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
+                     href="sertificates.html">сертификаты</a></li>
+               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="contacts.html">контакты</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+   <main class="container flow" style="--flow-space: 6rem">
+      <section class="hero flex" style="gap: 4rem">
+         <div class="hero-headline flow">
+            <h1 class="page-title"><span>проект</span>nurtown</h1>
+            <div class="slider-buttons flex">
+               <button class="slider-button left bg-white">
+                  <span></span>
+               </button>
+               <button class="slider-button right bg-white">
+                  <span></span>
+               </button>
+            </div>
+            <span class="counter flex text-grey ff-regular fs-22">01<span></span>02</span>
+         </div>
+         <div class="hero-image">
+            <img src="https://source.unsplash.com/1600x1400/?black-and-white-modern-building" alt="modern-interior">
+            <a class="main-button bg-white text-dark ff-regular fs-12 uppercase letter-spacing"
+               href="#">взгялнуть<span></span></a>
+         </div>
+      </section>
+      <section class="about grid">
+         <div class="about-images flex">
+            <div class="image">
+               <img src="https://source.unsplash.com/600x400/?modern-building" alt="modern-interior">
+               <img src="https://source.unsplash.com/800x200/?modern-building" alt="modern-interior">
+            </div>
+            <div class="image">
+               <img src="https://source.unsplash.com/800x600/?modern-building" alt="modern-interior">
+            </div>
+         </div>
+         <article class="about-article flow" style="--flow-space: 1.5rem">
+            <h2 class="ff-light fs-64 text-grey">О компании</h2>
+            <p class="ff-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, atque sequi
+               explicabo minima hic nulla? Voluptatem cumque magni ratione modi suscipit sed tempora quasi,
+               mollitia pariatur molestias autem. Natus, hic.</p>
+            <a class="main-button bg-white text-dark ff-regular fs-12 uppercase letter-spacing"
+               href="contacts.html">читать<span></span></a>
+         </article>
+      </section>
+      <section class="tasks">
+         <h2 class="ff-light fs-64 text-grey">Основные задачи</h2>
+         <ol class="flex">
+            <li class="flex">
+               <h3 class="fs-200 ff-black text-light">1</h3>
+               <p>Создание комфортных условий и повышение качества обслуживания клиентов</p>
+            </li>
+            <li class="flex">
+               <h3 class="fs-200 ff-black text-light">2</h3>
+               <p class="fs-24">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала,
+                  закупки нового оборудования и усиленной рекламы на рынке</p>
+            </li>
+         </ol>
+      </section>
+      <section class="projects">
+         <h2 class="ff-light fs-64 text-grey">Наши проекты</h2>
+         <div class="project-gallery grid">
+            <div class="project-gallery--item  w-3 h-1">
+               <div class="image">
+                  <img src="https://source.unsplash.com/1600x400/?concert-hall" alt="concert-hall">
+               </div>
+               <a class="text text-white uppercase" href="#">
+                  <span class="fs-64">концертный зал</span>
+                  <span class="main-button fs-12 letter-spacing"
+                     style="--arrow-color: #fff">Подробнее<span></span></span>
+               </a>
+            </div>
+            <div class="project-gallery--item w-3 h-1">
+               <div class="image">
+                  <img src="https://source.unsplash.com/1200x400/?modern-library" alt="library">
+               </div>
+               <a class="text text-white uppercase" href="#">
+                  <span class="fs-64">библиотека</span>
+                  <span class="main-button fs-12 letter-spacing"
+                     style="--arrow-color: #fff">Подробнее<span></span></span>
+               </a>
+            </div>
+            <div class="project-gallery--item w-2 h-1">
+               <div class="image">
+                  <img src="https://source.unsplash.com/1600x900/?parking" alt="parking">
+               </div>
+               <a class="text text-white uppercase" href="#">
+                  <span class="fs-64">паркинг</span>
+                  <span class="main-button fs-12 letter-spacing"
+                     style="--arrow-color: #fff">Подробнее<span></span></span>
+               </a>
+            </div>
+            <div class="project-gallery--item w-2 h-1">
+               <div class="image">
+                  <img src="https://source.unsplash.com/900x300/?office-building" alt="office-building">
+               </div>
+               <a class="text text-white uppercase" href="#">
+                  <span class="fs-64">офис</span>
+                  <span class="main-button fs-12 letter-spacing"
+                     style="--arrow-color: #fff">Подробнее<span></span></span>
+               </a>
+            </div>
+            <div class="project-gallery--item w-2 h-1">
+               <div class="image">
+                  <img src="https://source.unsplash.com/1000x600/?modern-building" alt="architecure">
+               </div>
+               <a class="text text-white uppercase" href="#">
+                  <span class="fs-64">общежитие</span>
+                  <span class="main-button fs-12 letter-spacing"
+                     style="--arrow-color: #fff">Подробнее<span></span></span>
+               </a>
+            </div>
+         </div>
+         <a class="projects-link main-button bg-dark text-white ff-regular fs-12 uppercase letter-spacing"
+            style="--arrow-color: #fff" href="projects.html">Все проекты<span></span></a>
+      </section>
+      <section class="contact">
+         <h2 class="ff-light fs-64 text-grey">Связаться с нами</h2>
+         <div class="flex" style="--gap: 2rem">
+            <form class="flow" action="/">
+               <div class="flow" style="--flow-space: .7rem">
+                  <label class="input ff-regular fs-14">
+                     <span class="input--label">Имя</span>
+                     <input class="bg-light" placeholder=" " type="text">
+                  </label>
+                  <label class="input ff-regular fs-14">
+                     <span class="input--label">Номер телефона<span>*</span></span>
+                     <input class="bg-light" placeholder=" " type="tel">
+                  </label>
+                  <label class="input ff-regular fs-14">
+                     <span class="input--label">E-mail<span>*</span></span>
+                     <input class="bg-light" placeholder=" " type="email">
+                  </label>
+                  <label class="input ff-regular fs-14">
+                     <span class="input--label">Интересующий товар/услуга</span>
+                     <input class="bg-light" placeholder=" " type="text">
+                  </label>
+                  <label class="textarea ff-regular fs-14">
+                     <span class="textarea--label">Сообщение<span>*</span></span>
+                     <textarea class="bg-light" placeholder=" "></textarea>
+                  </label>
+               </div>
+               <button class="main-button bg-dark text-white ff-regular fs-12 uppercase letter-spacing"
+                  style="--arrow-color: #fff">Отправить<span></span></button>
+            </form>
+            <div class="contact-image">
+               <img src="https://source.unsplash.com/1800x600/?mail" alt="mail">
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="primary-footer">
+      <div class="footer-wrapper container text-white flex">
+         <picture class="logo">
+            <a href="/">
+               <img src="assets/9d77775a852384c5b246.svg" alt="logo">
             </a>
+         </picture>
+         <div class="footer-info flow" style="--flow-space: 1.5rem">
+            <h3 class="fs-16 ff-bold text-white">Информация</h3>
+            <ul class="flow" style="--flow-space: 1rem">
+               <li><a href="/" class="text-white ff-medium fs-14 letter-spacing-2">Главная</a></li>
+               <li><a href="gallery.html" class="text-white ff-medium fs-14 letter-spacing-2">Галерея</a></li>
+               <li><a href="projects.html" class="text-white ff-medium fs-14 letter-spacing-2">Проекты</a></li>
+               <li><a href="sertificates.html" class="text-white ff-medium fs-14 letter-spacing-2">Сертификаты</a></li>
+               <li><a href="contacts.html" class="text-white ff-medium fs-14 letter-spacing-2">Контакты</a></li>
+            </ul>
          </div>
-         <button class="burger-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">menu</span></button>
-         <div id="navigation">
-            <nav>
-               <ul id="primary-navigation" class="primary-navigation flex">
-                  <li class="active"><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
-                        href="index.html">главная</a>
-                  </li>
-                  <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="gallery.html">галерея</a>
-                  </li>
-                  <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="projects.html">проекты</a>
-                  </li>
-                  <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
-                        href="sertificates.html">сертификаты</a></li>
-                  <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="contacts.html">контакты</a>
-                  </li>
-               </ul>
-            </nav>
+         <div class="footer-contacts flow" style="--flow-space: 1.5rem">
+            <h3 class="fs-16 ff-bold text-white">Контакты</h3>
+            <ul class="flow" style="--flow-space: 1rem">
+               <li class="address">100000, Республика Казахстан,
+                  г. Караганда, ул. Телевизионная 10</li>
+               <li class="phone">+7 (701) 77 76 811</li>
+               <li class="email">Galym.sultanov@mail.ru</li>
+            </ul>
          </div>
-      </header>
-      <main class="container flow" style="--flow-space: 7.5rem">
-         <section class="hero">hero</section>
-         <section class="about">about</section>
-         <section class="challenges">challenges</section>
-         <section class="projects">projects</section>
-         <section class="contact">contact</section>
-      </main>
-      <footer></footer>
-   </div>
+         <div class="footer-socials flow" style="--flow-space: 1.5rem">
+            <h3 class="fs-16 ff-bold text-white">Социальные сети</h3>
+            <ul class="flex">
+               <li><a class="facebook" href="#"><span class="sr-only">facebook</span></a></li>
+               <li><a class="twitter" href="#"><span class="sr-only">twitter</span></a></li>
+               <li><a class="linkedin" href="#"><span class="sr-only">linkedin</span></a></li>
+               <li><a class="pinterest" href="#"><span class="sr-only">pinterest</span></a></li>
+            </ul>
+         </div>
+      </div>
+      <div class="rights">&copy;&nbsp;2019 Digital Project. Все права защищены.</div>
+   </footer>
 </body>
 
 </html>
