@@ -10,8 +10,8 @@
 </head>
 
 <body>
-   <div class="container">
-      <header class="primary-header flex">
+   <div>
+      <header class="primary-header container flex">
          <div class="logo">
             <a href="/">
                <img src="./assets/images/logo.svg" alt="digital project logo">
@@ -36,7 +36,7 @@
             </nav>
          </div>
       </header>
-      <main class="flow" style="--flow-space: 6rem">
+      <main class="container flow" style="--flow-space: 6rem">
          <section class="hero flex" style="gap: 4rem">
             <div class="hero-headline flow">
                <h1 class="page-title"><span>проект</span>nurtown</h1>
@@ -181,7 +181,44 @@
             </div>
          </section>
       </main>
-      <footer style="margin-top:  6rem;">footer</footer>
+      <footer class="primary-footer" style="margin-top: 6rem">
+         <div class="footer-wrapper container text-white flex">
+            <picture class="logo">
+               <a href="/">
+                  <img src="./assets/images/logo-white.svg" alt="logo">
+               </a>
+            </picture>
+            <div class="footer-info flow" style="--flow-space: 1.5rem">
+               <h3 class="fs-16 ff-bold text-white">Информация</h3>
+               <ul class="flow" style="--flow-space: 1rem">
+                  <li><a href="/" class="text-white ff-medium fs-14 letter-spacing-2">Главная</a></li>
+                  <li><a href="gallery.html" class="text-white ff-medium fs-14 letter-spacing-2">Галерея</a></li>
+                  <li><a href="projects.html" class="text-white ff-medium fs-14 letter-spacing-2">Проекты</a></li>
+                  <li><a href="sertificates.html" class="text-white ff-medium fs-14 letter-spacing-2">Сертификаты</a></li>
+                  <li><a href="contacts.html" class="text-white ff-medium fs-14 letter-spacing-2">Контакты</a></li>
+               </ul>
+            </div>
+            <div class="footer-contacts flow" style="--flow-space: 1.5rem">
+               <h3 class="fs-16 ff-bold text-white">Контакты</h3>
+               <ul  class="flow" style="--flow-space: 1rem">
+                  <li class="address">100000, Республика  Казахстан, 
+                     г. Караганда, ул. Телевизионная 10</li>
+                  <li class="phone">+7 (701) 77 76 811</li>
+                  <li class="email">Galym.sultanov@mail.ru</li>
+               </ul>
+            </div>
+            <div class="footer-socials flow" style="--flow-space: 1.5rem">
+               <h3 class="fs-16 ff-bold text-white">Социальные сети</h3>
+               <ul class="flex">
+                  <li><a class="facebook" href="#"><span class="sr-only">facebook</span></a></li>
+                  <li><a class="twitter" href="#"><span class="sr-only">twitter</span></a></li>
+                  <li><a class="linkedin" href="#"><span class="sr-only">linkedin</span></a></li>
+                  <li><a class="pinterest" href="#"><span class="sr-only">pinterest</span></a></li>
+               </ul>
+            </div>
+         </div>
+         <div class="rights">&copy;&nbsp;2019 Digital Project. Все права защищены.</div>
+      </footer>
    </div>
 </body>
 

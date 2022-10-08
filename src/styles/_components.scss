@@ -518,3 +518,113 @@
       }
    }
 }
+
+.primary-footer {
+   background-color: hsl(var(--clr-dark) / var(--opacity, 1));
+
+   .footer-wrapper {
+      --gap: 5rem;
+      padding-block: 3.75rem;
+      justify-content: space-between;
+
+      .logo {
+         flex-shrink: 0;
+      }
+
+      ul {
+         list-style: none;
+         padding: 0;
+      }
+
+      .footer-info {
+         a {
+            transition: .2s all ease-in-out;
+
+            &:hover {
+               --opacity: .5;
+            }
+         }
+      }
+
+      .footer-contacts {
+         width: 18rem;
+         flex-shrink: 0;
+
+         li {
+            padding-left: 2rem;
+            position: relative;
+
+            &::before {
+               content: "";
+               position: absolute;
+               left: 0;
+               top: 50%;
+               transform: translateY(-50%);
+               width: 1rem;
+               aspect-ratio: 1;
+               background-repeat: no-repeat;
+               background-position: center;
+               background-size: auto;
+            }
+         }
+
+         .address::before {
+            background-image: url('../assets/images/address.svg');
+         }
+
+         .phone::before {
+            background-image: url('../assets/images/phone.svg');
+         }
+
+         .email::before {
+            background-image: url('../assets/images/mail.svg');
+         }
+      }
+
+      .footer-socials ul {
+         --gap: 2rem;
+         flex-wrap: wrap;
+
+         li {
+            margin-inline: auto;
+         }
+
+         a {
+            display: inline-block;
+            width: 2rem;
+            aspect-ratio: 1;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto;
+            transition: .2s all ease-in-out;
+
+            &:hover {
+               opacity: .5;
+            }
+         }
+
+         .facebook {
+            background-image: url('../assets/images/facebook.svg');
+         }
+
+         .twitter {
+            background-image: url('../assets/images/twitter.svg');
+         }
+
+         .linkedin {
+            background-image: url('../assets/images/linkedin.svg');
+         }
+
+         .pinterest {
+            background-image: url('../assets/images/pinterest.svg');
+         }
+      }
+   }
+
+   .rights {
+      text-align: center;
+      padding-block: 1.5rem;
+      color: hsl(var(--clr-grey) / .5);
+      border-top: 1px solid hsl(var(--clr-grey) / .3);
+   }
+}
