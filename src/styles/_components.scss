@@ -362,8 +362,6 @@
 .primary-navigation {
    --gap: 4rem;
    height: 2rem;
-   list-style: none;
-   padding: 0;
    user-select: none;
 
    li {
@@ -480,8 +478,6 @@
    ol {
       --gap: 0 2rem;
       flex-wrap: wrap;
-      padding: 0;
-      list-style: none;
 
       li {
          flex: 1;
@@ -534,11 +530,6 @@
 
       .logo {
          flex-shrink: 0;
-      }
-
-      ul {
-         list-style: none;
-         padding: 0;
       }
 
       .footer-info {
@@ -678,7 +669,6 @@
    justify-content: space-around;
 
    * {
-      outline: 1px solid red;
       width: 20rem;
       aspect-ratio: 3/4;
 
