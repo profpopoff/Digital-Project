@@ -672,3 +672,18 @@
       }
    }
 }
+
+.certificates {
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+   * {
+      outline: 1px solid red;
+      width: 20rem;
+      aspect-ratio: 3/4;
+
+      img {
+         object-fit: contain;
+      }
+   }
+}
