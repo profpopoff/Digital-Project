@@ -354,17 +354,17 @@
       padding-top: 1rem;
    }
 
-   .burger-toggle {
+   .mobile-nav-toggle {
       display: none;
    }
 }
 
 .primary-navigation {
    --gap: 4rem;
-   height: 2rem;
    user-select: none;
 
    li {
+      height: 2rem;
       transition: .2s all ease-in-out;
 
       a {
@@ -674,6 +674,92 @@
 
       img {
          object-fit: contain;
+      }
+   }
+}
+
+@media screen and (max-width: 59rem) {
+   .primary-header {
+      .mobile-nav-toggle {
+         position: relative;
+         display: block;
+         z-index: 101;
+         background-color: transparent;
+         width: 2rem;
+         aspect-ratio: 1;
+         border: none;
+
+         .burger,
+         &::before,
+         &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            border-radius: 50rem;
+            background-color: hsl(var(--clr-dark) / var(--opacity, 1));
+            pointer-events: none;
+            transition: .3s all ease-in-out;
+         }
+
+         .burger {
+            top: 50%;
+            transform: translateY(-50%) scaleX(.7);
+            left: 0;
+         }
+
+         &::before {
+            top: 0;
+            left: 0;
+         }
+
+         &::after {
+            bottom: 0;
+            left: 0;
+         }
+      }
+
+      &[data-visible='true'] {
+         .primary-navigation {
+            transform: translateX(0);
+         }
+
+         .mobile-nav-toggle {
+            .burger {
+               transform: translateY(-50%) scaleX(0);
+            }
+
+            &::before {
+               top: 50%;
+               transform: translateY(-50%) rotate(45deg);
+            }
+
+            &::after {
+               bottom: 50%;
+               transform: translateY(50%) rotate(-45deg);
+            }
+         }
+      }
+   }
+
+   .primary-navigation {
+      position: fixed;
+      inset: 0 0 0 30%;
+      transform: translateX(100%);
+      z-index: 100;
+      background-color: hsl(var(--clr-white) / var(--opacity, .7));
+      backdrop-filter: blur(.5rem);
+      transition: .3s all ease-in-out;
+
+      ul {
+         height: 100%;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+      }
+
+      a {
+         font-size: var(--fs-18);
       }
    }
 }

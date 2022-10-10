@@ -10,30 +10,28 @@
 </head>
 
 <body>
-   <header class="primary-header container flex">
+   <header class="primary-header container flex" data-visible="false">
       <div class="logo">
          <a href="/">
             <img src="./assets/images/logo.svg" alt="digital project logo">
          </a>
       </div>
-      <button class="burger-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
-            class="sr-only">menu</span></button>
-      <div id="navigation">
-         <nav>
-            <ul id="primary-navigation" class="primary-navigation flex">
-               <li class="active"><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="/">главная</a>
-               </li>
-               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="gallery.html">галерея</a>
-               </li>
-               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="projects.html">проекты</a>
-               </li>
-               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
-                     href="certificates.html">сертификаты</a></li>
-               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="contacts.html">контакты</a>
-               </li>
-            </ul>
-         </nav>
-      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+            class="sr-only">menu</span><span class="burger"></span></button>
+      <nav id="primary-navigation" class="primary-navigation">
+         <ul class="flex">
+            <li class="active"><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="/">главная</a>
+            </li>
+            <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="gallery.html">галерея</a>
+            </li>
+            <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="projects.html">проекты</a>
+            </li>
+            <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="certificates.html">сертификаты</a>
+            </li>
+            <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="contacts.html">контакты</a>
+            </li>
+         </ul>
+      </nav>
    </header>
    <main class="container flow" style="--flow-space: 6rem">
       <section class="hero flex" style="gap: 4rem">
