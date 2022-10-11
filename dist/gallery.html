@@ -7,31 +7,32 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Gallery | Digital Project</title>
    <link rel="icon" href="assets/a0e814482df95187fa5a.svg">
-<script defer src="main.9927db99f6fbd68bca6f.js"></script></head>
+<script defer src="main.34875e598db42dad1fa8.js"></script></head>
 
 <body>
-   <header class="primary-header container flex">
+   <header class="primary-header container flex" data-visible="false">
       <div class="logo">
          <a href="/">
             <img src="assets/e01d9bf6a92b34790a1f.svg" alt="digital project logo">
          </a>
       </div>
-      <div id="navigation">
-         <nav>
-            <ul class="primary-navigation flex">
-               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="/">главная</a>
-               </li>
-               <li class="active"><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
-                     href="gallery.html">галерея</a></li>
-               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="projects.html">проекты</a>
-               </li>
-               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
-                     href="certificates.html">сертификаты</a></li>
-               <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="contacts.html">контакты</a>
-               </li>
-            </ul>
-         </nav>
-      </div>
+      <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+            class="sr-only">menu</span><span class="burger"></span></button>
+      <nav id="primary-navigation" class="primary-navigation">
+         <ul class="flex">
+            <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="/">главная</a>
+            </li>
+            <li class="active"><a class="text-dark fs-12 ff-regular uppercase letter-spacing"
+                  href="gallery.html">галерея</a>
+            </li>
+            <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="projects.html">проекты</a>
+            </li>
+            <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="certificates.html">сертификаты</a>
+            </li>
+            <li><a class="text-dark fs-12 ff-regular uppercase letter-spacing" href="contacts.html">контакты</a>
+            </li>
+         </ul>
+      </nav>
    </header>
    <main class="container flow" style="--flow-space: 3rem">
       <h1 class="page-title"><span>галерея</span>фотографий</h1>
@@ -135,7 +136,7 @@
       </div>
       <div class="flex" style="--gap: 3rem">
          <span class="counter flex text-grey ff-regular fs-22" style="--gap: 1rem">01<span></span>05</span>
-         <div class="slider-buttons flex"style="--gap: 1rem">
+         <div class="slider-buttons flex" style="--gap: 1rem">
             <button class="slider-button left bg-white">
                <span></span>
             </button>

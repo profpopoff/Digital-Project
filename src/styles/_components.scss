@@ -524,7 +524,7 @@
    background-color: hsl(var(--clr-dark) / var(--opacity, 1));
 
    .footer-wrapper {
-      --gap: 5rem;
+      --gap: clamp(2rem, 5vw, 5rem);
       padding-block: 3.75rem;
       justify-content: space-between;
 
