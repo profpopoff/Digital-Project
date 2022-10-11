@@ -6,6 +6,7 @@ import './projects.html'
 import './certificates.html'
 import './styles/index.scss'
 
+// header 
 const header = document.querySelector('.primary-header')
 const nav = document.querySelector('.primary-navigation')
 const navToggle = document.querySelector('.mobile-nav-toggle')
