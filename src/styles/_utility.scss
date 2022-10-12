@@ -52,7 +52,7 @@
 
 .uppercase { text-transform: uppercase }
 
-.fs-200 { font-size: var(--fs-200) }
+.fs-200 { font-size: var(--fs-200); line-height: 10rem; }
 .fs-64 { font-size: var(--fs-64) }
 .fs-40 { font-size: var(--fs-40) }
 .fs-22 { font-size: var(--fs-22) }

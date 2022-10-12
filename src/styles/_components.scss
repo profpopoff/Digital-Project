@@ -13,7 +13,7 @@
 }
 
 .main-button {
-   width: 13.8rem;
+   width: min(13.8rem, 100%);
    height: 4.3rem;
    display: flex;
    align-items: center;
@@ -157,7 +157,7 @@
 
    input {
       position: relative;
-      width: (24rem);
+      width: 24rem;
       height: 2.8rem;
       padding-inline: 1.25rem;
       border: none;
@@ -461,11 +461,14 @@
 }
 
 .tasks {
+   display: flex;
+   flex-direction: column;
+   gap: 1.5rem;
    max-width: 60rem;
    margin-inline: auto;
 
    ol {
-      --gap: 0 2rem;
+      --gap: 2rem;
       flex-wrap: wrap;
 
       li {
@@ -689,12 +692,13 @@
       &-headline {
          position: absolute;
          inset: 0 auto 0 0;
-         background-color: hsl(var(--clr-white) / var(--opacity, .3));
+         background-color: hsl(var(--clr-dark) / var(--opacity, .3));
          backdrop-filter: blur(.5rem);
          z-index: 5;
          padding: 1rem;
 
          .text-grey,
+         .page-title,
          .page-title span {
             color: hsl(var(--clr-white) / 1);
          }
@@ -818,6 +822,21 @@
       grid-template-columns: minmax(0, 1fr) 14.375rem minmax(0, 25rem) minmax(0, 1fr);
    }
 
+   .input input,
+   .textarea textarea {
+      width: 100%;
+   }
+
+   .contact {
+      form {
+         width: 100%;
+      }
+
+      &-image {
+         display: none;
+      }
+   }
+
    .primary-footer .footer-wrapper {
       flex-wrap: wrap;
       justify-content: space-around;
@@ -828,7 +847,15 @@
    }
 
    .project-gallery {
+      --gap: 1rem;
+      --row-size: 12rem;
       grid-template-columns: repeat(1, 1fr);
+
+      .text {
+         opacity: 1;
+         inset: 0 auto 0 0;
+         padding: 1rem;
+      }
 
       .w-1,
       .w-2,
@@ -850,6 +877,36 @@
          grid-column: 2;
       }
    }
+
+   .project-gallery {
+      .text {
+         inset: 0 0;
+      }
+   }
+
+   .tasks {
+      gap: 0;
+
+      ol {
+         flex-direction: column;
+         --gap: 0rem;
+
+         li {
+            position: relative;
+            justify-content: start;
+            align-items: flex-end;
+
+            .fs-200 {
+               font-size: 10rem;
+            }
+
+            p {
+               position: absolute;
+            }
+         }
+
+      }
+   }
 }
 
 @media screen and (max-width: 32.25rem) {
@@ -865,5 +922,15 @@
       .footer-contacts {
          width: auto;
       }
+   }
+}
+
+@media screen and (max-width: 26rem) {
+   .hero .hero-headline {
+      inset: 0;
+   }
+
+   .primary-navigation {
+      inset: 0;
    }
 }
