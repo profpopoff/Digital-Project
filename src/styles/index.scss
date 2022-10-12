@@ -6,8 +6,3 @@ body {
    color: hsl(var(--clr-dark));
    background-color: hsl(var(--clr-white));
 }
-
-main {
-   --flow-space: clamp(2rem, 9vw, 6rem);
-   padding-top :var(--header-height);
-}
