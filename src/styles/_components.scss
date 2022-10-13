@@ -2,7 +2,7 @@
    display: inline-block;
    font-family: var(--ff-bold);
    font-size: var(--fs-64);
-   line-height: 4rem;
+   // line-height: 4rem;
    text-transform: uppercase;
 
    span {
@@ -625,7 +625,6 @@
 .project {
    height: 25rem;
    background-color: hsl(var(--clr-grey) / .1);
-
    --gap: 0;
 
    .image {
@@ -726,6 +725,16 @@
          .image:last-child {
             margin-top: 0;
          }
+      }
+   }
+
+   .project {
+      .image {
+         flex: 1;
+      }
+
+      article {
+         flex: 1;
       }
    }
 }
@@ -926,6 +935,16 @@
             }
          }
 
+      }
+   }
+
+   .project {
+      height: auto;
+      flex-direction: column;
+
+      article {
+         width: auto;
+         padding: 1rem;
       }
    }
 }
