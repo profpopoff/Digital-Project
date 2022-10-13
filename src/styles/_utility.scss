@@ -3,6 +3,10 @@
    gap: var(--gap, 1rem);
 }
 
+.wrap {
+   flex-wrap: wrap;
+}
+
 .grid {
    display: grid;
    gap: var(--gap, 1rem);
@@ -16,6 +20,7 @@
    max-width: 100rem;
    margin-inline: auto;
    padding-inline: clamp(1rem, 5vw, 4em);
+   overflow: hidden;
 }
 
 .sr-only {
