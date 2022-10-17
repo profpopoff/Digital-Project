@@ -31,6 +31,8 @@ document.getElementById("nav-button--prev").addEventListener("click", () => {
    changeSlide(currentSlide - 1)
 })
 
+document.getElementById("slides-length").innerHTML = `0${slides.length}`
+
 function changeSlide(moveTo) {
    if (moveTo >= slides.length) { moveTo = 0 }
    if (moveTo < 0) { moveTo = slides.length - 1 }
@@ -41,5 +43,4 @@ function changeSlide(moveTo) {
    currentSlide = moveTo
 
    document.getElementById("current-slide").innerHTML = `0${currentSlide + 1}`
-   document.getElementById("slides-length").innerHTML = `0${slides.length}`
 }
