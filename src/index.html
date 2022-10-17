@@ -38,17 +38,24 @@
          <div class="hero-headline flow">
             <h1 class="page-title"><span>проект</span>nurtown</h1>
             <div class="slider-buttons flex">
-               <button class="slider-button left bg-white">
+               <button class="slider-button left bg-white" id="nav-button--prev">
                   <span></span>
                </button>
-               <button class="slider-button right bg-white">
+               <button class="slider-button right bg-white" id="nav-button--next">
                   <span></span>
                </button>
             </div>
-            <span class="counter flex text-grey ff-regular fs-22">01<span></span>02</span>
+            <span class="counter flex text-grey ff-regular fs-22">
+               <span id="current-slide">01</span><span class="slash"></span><span id="slides-length">02</span>
+            </span>
          </div>
          <div class="hero-image">
-            <img src="https://source.unsplash.com/1600x1400/?black-and-white-modern-building" alt="modern-building">
+            <div class="slider__slide active">
+               <img src="https://source.unsplash.com/1600x1400/?black-and-white-modern-building" alt="modern-building">
+            </div>
+            <div class="slider__slide">
+               <img src="https://source.unsplash.com/1600x1600/?black-and-white-modern-building" alt="modern-building">
+            </div>
             <a class="main-button bg-white text-dark ff-regular fs-12 uppercase letter-spacing"
                href="#">взгялнуть<span></span></a>
          </div>
